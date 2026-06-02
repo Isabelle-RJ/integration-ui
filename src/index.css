@@ -182,6 +182,11 @@ nav {
     gap: .5rem;
 }
 
+.card p {
+    color: var(--black);
+    font-family: "Open Sans", sans-serif;
+}
+
 .form {
     display: flex;
     justify-content: center;
@@ -451,4 +456,130 @@ footer {
 
 .designed span {
     color: var(--primary-teal);
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+    /* --- NAV / HEADER --- */
+    h1 {
+        display: none;
+    }
+    nav {
+        justify-content: flex-end;
+        align-items: center;
+        padding: 1rem 2rem 1.5rem 0;
+        background-color: var(--black);
+    }
+
+    .menu-nav-links {
+        display: none;
+    }
+
+    /* Crée l'icône burger (les 3 lignes blanches) à l'aide de bordures */
+    nav::after {
+        content: "";
+        display: block;
+        width: 48px;
+        height: 2px;
+        background-color: var(--white);
+        box-shadow: 0 8px 0 var(--white), 0 16px 0 var(--white);
+        margin: 1rem 0.25rem;
+    }
+
+    /* --- BANNER --- */
+    .bg-banner {
+        height: auto;
+        padding-bottom: 3rem;
+    }
+
+    .little-text-banner,
+    .btn-banner {
+        display: none;
+    }
+
+    .text-btn-banner {
+        padding: 4rem 1.5rem;
+    }
+
+    .text-btn-banner h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    /* --- SERVICES --- */
+    .services {
+        padding: 3rem 1.5rem;
+    }
+
+    .services h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .cards-services {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 3rem;
+    }
+
+    .card {
+        text-align: center;
+        max-width: 320px;
+    }
+
+    .card img {
+        width: 3.5rem;
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .card p {
+        font-family: "Open Sans", sans-serif;
+        color: var(--secondary-dark-grey);
+        line-height: 1.5;
+    }
+
+    /* --- BLOG --- */
+    .blog-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .blog-header {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .blog-title {
+        font-size: 2.2rem;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+
+    .blog-card {
+        max-width: 100%;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px dashed var(--primary-light-grey);
+    }
+
+    .blog-card:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+        padding: 1.5rem 1rem;
+    }
 }
