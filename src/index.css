@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    color: inherit;
+}
+
+:root {
+    --primary-teal: #3EC1D5;
+    --primary-dark-blue: #2D3F54;
+    --primary-light-grey: #D5CFCF;
+    --secondary-dark-grey: #45505D;
+    --black: #444444;
+    --white: #ffffff;
+}
+
+.home {
+    font-family: Raleway, sans-serif;
+    text-decoration: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+}
+
+button {
+    color: var(--white);
+    text-transform: uppercase;
+    border-radius: 50rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+}
+
+.btn-services {
+    background-color: var(--primary-teal);
+    padding: .5rem 1rem;
+    border: var(--primary-teal) 2px solid;
+}
+
+.btn-services:hover {
+    background-color: transparent;
+    border: var(--white) 2px solid;
+}
+
+.btn-learn-more {
+    background-color: transparent;
+    border: var(--white) 2px solid;
+    padding: .5rem 1rem;
+}
+
+.btn-learn-more:hover {
+    background-color: var(--primary-teal);
+    padding: .5rem 1rem;
+    border: var(--primary-teal) 2px solid;
+}
+
+.btn-banner {
+    display: flex;
+    gap: 1rem;
+}
+
+h1 {
+    color: var(--primary-teal);
+    font-family: Raleway, sans-serif;
+}
+
+h2 {
+    color: var(--white);
+    font-family: Raleway, sans-serif;
+    font-size: 2.5rem;
+}
+
+.services h2 {
+    color: var(--black);
+}
+
+h3 {
+    font-family: Raleway, sans-serif;
+    color: var(--black);
+}
+
+.title-certif {
+    color: var(--white);
+}
+
+nav {
+    background-color: var(--primary-dark-blue);
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+}
+
+.bg-banner {
+    width: 100%;
+    height: 660px;
+    background-image: url('../public/images/slider.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-nav-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid var(--white);
+}
+
+.nav-link:active {
+    border-bottom: 3px solid var(--white);
+}
+
+.little-text-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10.5rem;
+    padding-bottom: 1.5rem;
+    color: var(--white);
+    font-family: Raleway, sans-serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.text-btn-banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.5rem ;
+    padding-bottom: 1.5rem ;
+    gap: .5rem;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.cards-services{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: .5rem 11.25rem;
+}
+
+.line {
+    width: 80px;
+    height: 2px;
+    background-color: var(--black);
+}
+
+.card img {
+    width: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    gap: .5rem;
+}
+
+footer {
+    background-color: var(--primary-light-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    font-family: "Open Sans", sans-serif;
+}
+.copyright {
+    color: var(--black)
+}
+
+.designed {
+    color: var(--white);
+}
+
+.designed span {
+    color: var(--primary-teal);
+}
