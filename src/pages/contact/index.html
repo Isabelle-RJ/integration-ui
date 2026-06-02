@@ -1,10 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intégration CDUI</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+<header>
+    <div class="bg-banner">
+        <nav>
+            <h1><a href="../../index.html" class="home">White<span class="title-certif">Certification</span></a></h1>
+            <div class="menu-nav-links">
+                <a href="../../index.html" class="nav-link">Home</a>
+                <a href="../services/index.html" class="nav-link">Services</a>
+                <a href="../blog/index.html" class="nav-link">Blog</a>
+                <a href="../contact/index.html" class="nav-link active">Contact</a>
+            </div>
+        </nav>
+        <section class="little-text-banner">
+            <p>Pour nous contacter, il faut remplir le formulaire !</p>
+        </section>
+        <section class="text-btn-banner">
+            <h2>We do it with fingers in the nose</h2>
+            <div class="btn-banner">
+                <button class="btn-services">SEE SERVICES</button>
+                <button class="btn-learn-more">LEARN MORE</button>
+            </div>
+        </section>
+    </div>
+</header>
+<main>
+    <section class="form">
+        <form method="get" action="">
+            <fieldset>
+                <legend>Contact us</legend>
+                <label>Votre prénom</label>
+                <input type="text" name="prenom" required>
 
+                <label>Votre nom</label>
+                <input type="text" name="name" required>
+
+                <label>Votre adresse email</label>
+                <input type="email" name="email" required>
+
+                <label>Votre mot de passe</label>
+                <input type="password" name="password" required>
+
+                <input type="submit" value="Envoyer">
+            </fieldset>
+        </form>
+    </section>
+</main>
+<footer>
+    <p class="copyright">© Copyright <strong>Afpa</strong>. All Right Reserved</p>
+    <p class="designed">Designed by <span>Isabelle Radermecker Jurain</span></p>
+</footer>
 </body>
 </html>
